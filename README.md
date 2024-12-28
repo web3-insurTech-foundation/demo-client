@@ -18,4 +18,7 @@ You are very welcome to contribute- please follow the guidelines presented for t
 3. Commit your changes to your Fork
 4. Request Pull Request back to our repo
 
+# Changelog
+- created dev branch
+
 For more information, don't hesitate to get in touch with the W3IF technology group at www.w3if.org
