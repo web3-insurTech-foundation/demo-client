@@ -1,5 +1,5 @@
 {
-    "name": "ultima-ng",
+    "name": "demo-client",
     "version": "17.0.0",
     "scripts": {
         "ng": "ng",
