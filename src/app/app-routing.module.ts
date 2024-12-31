@@ -18,7 +18,10 @@ const routes: Routes = [
             { path: 'documentation', data: { breadcrumb: 'Documentation' }, loadChildren: () => import('./demo/components/documentation/documentation.module').then(m => m.DocumentationModule) },
             { path: 'blocks', data: { breadcrumb: 'Prime Blocks' }, loadChildren: () => import('./demo/components/primeblocks/primeblocks.module').then(m => m.PrimeBlocksModule) },
             { path: 'ecommerce', data: { breadcrumb: 'E-Commerce' }, loadChildren: () => import('./demo/components/ecommerce/ecommerce.module').then(m => m.EcommerceModule) },
-            { path: 'apps', data: { breadcrumb: 'Apps' }, loadChildren: () => import('./demo/components/apps/apps.module').then(m => m.AppsModule) }
+            { path: 'apps', data: { breadcrumb: 'Apps' }, loadChildren: () => import('./demo/components/apps/apps.module').then(m => m.AppsModule) },
+            { path: 'coverage', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./demo/components/coverage/coverage.module').then(m => m.CoverageModule) },
+            { path: 'investments', data: { breadcrumb: 'Investments' }, loadChildren: () => import('./demo/components/investments/investments.module').then(m => m.InvestmentsModule) },
+
         ]
     },
     { path: 'auth', data: { breadcrumb: 'Auth' }, loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
@@ -26,7 +29,8 @@ const routes: Routes = [
     { path: 'landing', loadChildren: () => import('./demo/components/landing/landing.module').then(m => m.LandingModule) },
     { path: 'notfound', loadChildren: () => import('./demo/components/notfound/notfound.module').then(m => m.NotfoundModule) },
     { path: 'notfound2', loadChildren: () => import('./demo/components/notfound2/notfound2.module').then(m => m.Notfound2Module) },
-    { path: '**', redirectTo: '/notfound' }
+    { path: 'register', redirectTo: '/auth/register' },
+    { path: '**', redirectTo: '/auth/login' }
 ];
 
 @NgModule({
