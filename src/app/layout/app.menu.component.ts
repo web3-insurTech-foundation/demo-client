@@ -12,7 +12,7 @@ export class AppMenuComponent implements OnInit {
     ngOnInit() {
         this.model = [
             {
-                label: 'Dashboards',
+                label: 'System Dashboards',
                 icon: 'pi pi-home',
                 items: [
                     {
@@ -34,12 +34,12 @@ export class AppMenuComponent implements OnInit {
                       label: 'Status Dashboard',
                       icon: 'pi pi-fw pi-bars',
                       routerLink: ['/dashboard-status']
-                  },
-                  {
-                    label: 'Claims Dashboard',
-                    icon: 'pi pi-fw pi-comment',
-                    routerLink: ['/dashboard-claims']
-                },
+                    },
+                    {
+                      label: 'Claims Dashboard',
+                      icon: 'pi pi-fw pi-comment',
+                      routerLink: ['/dashboard-claims']
+                    }
                 ]
             },
             {
@@ -50,6 +50,11 @@ export class AppMenuComponent implements OnInit {
                       label: 'My Policies',
                       icon: 'pi pi-fw pi-eye',
                       routerLink: ['/coverage/policies']
+                  },
+                  {
+                      label: 'My Claims',
+                      icon: 'pi pi-fw pi-globe',
+                      routerLink: ['/coverage/claims']
                   },
                   {
                       label: 'Marketplace',

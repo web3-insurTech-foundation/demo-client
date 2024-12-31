@@ -1,34 +1,39 @@
 <div class="card">
   <div class="flex flex-column md:flex-row justify-content-between align-items-center mb-4">
       <div class="flex flex-column text-center md:text-left">
-          <span class="text-900 text-2xl mb-2">My Policies</span>
-          <span class="text-700 text-lg">Active Policies attached to this account.</span>
+          <span class="text-900 text-2xl mb-2">My Claims</span>
+          <span class="text-700 text-lg">Summary of claims attached to this account.</span>
       </div>
       <span class="p-input-icon-right mt-5 mb-2 md:mt-0 md:mb-0 w-full lg:w-25rem">
           <i class="pi pi-search text-gray-400"></i>
           <input type="text" class="p-inputtext w-full lg:w-25rem surface-50" placeholder="Search"/>
       </span>
   </div>
-  <div class="surface-card grid grid-nogutter border-round shadow-2 mb-6" *ngFor="let order of policies">
+  <div class="surface-card grid grid-nogutter border-round shadow-2 mb-6" *ngFor="let order of orders">
       <div class="col-12 flex p-2 surface-100 border-round-top">
           <div class="p-2 flex-auto text-center md:text-left">
-              <span class="text-700 block">Contract Number</span>
+              <span class="text-700 block">Claim Number</span>
               <span class="text-900 font-medium block mt-2">{{order.orderNumber}}</span>
           </div>
           <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
           <div class="p-2 flex-auto text-center md:text-left">
-            <span class="text-700 block">Property Address</span>
-            <span class="text-900 font-medium block mt-2">{{order.propertyAddress}}</span>
-        </div>
-        <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
-          <div class="p-2 flex-auto text-center md:text-left">
-              <span class="text-700 block">Order Date</span>
+              <span class="text-700 block">Claim Date</span>
               <span class="text-900 font-medium block mt-2">{{order.orderDate}}</span>
           </div>
           <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
           <div class="p-2 flex-auto text-center md:text-left">
-              <span class="text-700 block">Total Amount</span>
+              <span class="text-700 block">Last Update</span>
+              <span class="text-900 font-medium block mt-2">{{order.lastUpdateDate}}</span>
+          </div>
+          <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
+          <div class="p-2 flex-auto text-center md:text-left">
+              <span class="text-700 block">Claim Amount</span>
               <span class="text-900 font-medium block mt-2">{{order.amount}}</span>
+          </div>
+          <p-divider align="center" layout="vertical" styleClass="h-full  mx-0 lg:mx-3 surface-border"></p-divider>
+          <div class="p-2 flex-auto text-center md:text-left">
+              <span class="text-700 block">Claim Status</span>
+              <span class="text-900 font-medium block mt-2">{{order.status}}</span>
           </div>
       </div>
       <div class="col-12">
@@ -38,11 +43,7 @@
                   <div class="flex flex-column my-auto text-center md:text-left">
                       <span class="text-900 font-medium mb-3 mt-3 lg:mt-0">{{product.name}}</span>
                       <span class="text-700 text-sm mb-3">{{product.color}} | {{product.size}}</span>
-                      <span>
-                        <a pRipple tabindex="0" class="p-2 select-none cursor-pointer w-10rem mx-auto lg:mx-0 border-round font-medium text-center border-1 border-primary text-primary transition-duration-150">Renew <span class="font-light">| {{product.price}}</span></a>
-                        &nbsp;
-                        <a pRipple tabindex="0" class="p-2 select-none cursor-pointer w-10rem mx-auto lg:mx-0 border-round font-medium text-center border-1 border-primary text-primary transition-duration-150">Submit Claim</a>
-                      </span>
+                      <a pRipple tabindex="0" class="p-2 select-none cursor-pointer w-10rem mx-auto lg:mx-0 border-round font-medium text-center border-1 border-primary text-primary transition-duration-150">Report Problem</a>
                   </div>
               </div>
               <div class=" mr-0 lg:mr-3 mt-4 lg:mt-0 p-2 flex align-items-center" style="background-color: rgba(76, 175, 80,.1);"  [style.border-radius]="'2.5rem'">
