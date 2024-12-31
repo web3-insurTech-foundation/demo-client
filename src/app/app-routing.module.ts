@@ -21,6 +21,7 @@ const routes: Routes = [
             { path: 'apps', data: { breadcrumb: 'Apps' }, loadChildren: () => import('./demo/components/apps/apps.module').then(m => m.AppsModule) },
             { path: 'coverage', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./demo/components/coverage/coverage.module').then(m => m.CoverageModule) },
             { path: 'investments', data: { breadcrumb: 'Investments' }, loadChildren: () => import('./demo/components/investments/investments.module').then(m => m.InvestmentsModule) },
+
         ]
     },
     { path: 'auth', data: { breadcrumb: 'Auth' }, loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
@@ -28,6 +29,7 @@ const routes: Routes = [
     { path: 'landing', loadChildren: () => import('./demo/components/landing/landing.module').then(m => m.LandingModule) },
     { path: 'notfound', loadChildren: () => import('./demo/components/notfound/notfound.module').then(m => m.NotfoundModule) },
     { path: 'notfound2', loadChildren: () => import('./demo/components/notfound2/notfound2.module').then(m => m.Notfound2Module) },
+    { path: 'register', redirectTo: '/auth/register' },
     { path: '**', redirectTo: '/auth/login' }
 ];
 
