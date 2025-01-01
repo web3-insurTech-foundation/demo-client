@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
     { path: 'policies', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./policies/policies.module').then(m => m.PoliciesModule) },
     { path: 'marketplace', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./marketplace/marketplace.module').then(m => m.MarketplaceModule) },
     { path: 'claims', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./claims/claims.module').then(m => m.ClaimsModule) },
+    { path: '', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./claims/claims.module').then(m => m.ClaimsModule) },
     /*
     { path: 'contact', data: { breadcrumb: 'Contact' }, loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) },
     { path: 'crud', data: { breadcrumb: 'Crud' }, loadChildren: () => import('./crud/crud.module').then(m => m.CrudModule) },
