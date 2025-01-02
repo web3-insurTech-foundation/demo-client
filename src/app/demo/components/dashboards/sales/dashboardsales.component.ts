@@ -565,7 +565,7 @@ export class DashboardSalesComponent implements OnInit, OnDestroy {
             ],
             datasets: [
                 {
-                    label: 'New Orders',
+                    label: 'New Claims',
                     data: [31, 83, 69, 29, 62, 25, 59, 26, 46],
                     borderColor: ['#4DD0E1'],
                     backgroundColor: ['rgba(77, 208, 225, 0.8)'],
@@ -574,7 +574,7 @@ export class DashboardSalesComponent implements OnInit, OnDestroy {
                     tension: 0.4,
                 },
                 {
-                    label: 'Completed Orders',
+                    label: 'Completed Claims',
                     data: [67, 98, 27, 88, 38, 3, 22, 60, 56],
                     borderColor: ['#3F51B5'],
                     backgroundColor: ['rgba(63, 81, 181, 0.8)'],

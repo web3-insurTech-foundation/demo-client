@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   imports: [RouterModule.forChild([
     { path: 'dashboard', data: { breadcrumb: 'Dashboard' }, loadChildren: () => import('./investment-dashboard/investment-dashboard.module').then(m => m.InvestmentDashboardModule) },
+    { path: 'marketplace', data: { breadcrumb: 'Marketplace' }, loadChildren: () => import('./investment-marketplace/investment-marketplace.module').then(m => m.InvestmentMarketplaceModule) },
     /*
     { path: 'contact', data: { breadcrumb: 'Contact' }, loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) },
     { path: 'crud', data: { breadcrumb: 'Crud' }, loadChildren: () => import('./crud/crud.module').then(m => m.CrudModule) },

@@ -63,7 +63,7 @@ export class InvestmentDashboardComponent implements OnInit, OnDestroy {
           ],
           datasets: [
               {
-                  label: 'My First dataset',
+                  label: 'Treasury Total',
                   backgroundColor:
                       documentStyle.getPropertyValue('--primary-500'),
                   borderColor:
@@ -71,7 +71,7 @@ export class InvestmentDashboardComponent implements OnInit, OnDestroy {
                   data: [65, 59, 80, 81, 56, 55, 40],
               },
               {
-                  label: 'My Second dataset',
+                  label: 'Claims Processing',
                   backgroundColor:
                       documentStyle.getPropertyValue('--primary-200'),
                   borderColor:
@@ -156,7 +156,7 @@ export class InvestmentDashboardComponent implements OnInit, OnDestroy {
           ],
           datasets: [
               {
-                  label: 'First Dataset',
+                  label: 'Treasury Total',
                   data: [65, 59, 80, 81, 56, 55, 40],
                   fill: false,
                   backgroundColor:
@@ -166,7 +166,7 @@ export class InvestmentDashboardComponent implements OnInit, OnDestroy {
                   tension: 0.4,
               },
               {
-                  label: 'Second Dataset',
+                  label: 'Claims Processing',
                   data: [28, 48, 40, 19, 86, 27, 90],
                   fill: false,
                   backgroundColor:
@@ -243,13 +243,13 @@ export class InvestmentDashboardComponent implements OnInit, OnDestroy {
 
       this.radarData = {
           labels: [
-              'Eating',
-              'Drinking',
-              'Sleeping',
-              'Designing',
-              'Coding',
-              'Cycling',
-              'Running',
+              'Windstorm',
+              'Flood',
+              'Fire',
+              'Earthquake',
+              'Personal Lines',
+              'Pet Insurance',
+              'Healthcare',
           ],
           datasets: [
               {
