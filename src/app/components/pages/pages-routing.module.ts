@@ -11,8 +11,8 @@ import { RouterModule } from '@angular/router';
         { path: 'dashboard', data: { breadcrumb: 'Dashboard' }, loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
         { path: 'invest', data: { breadcrumb: 'Invest' }, loadChildren: () => import('./invest/invest.module').then(m => m.InvestModule) },
         // { path: 'claim', data: { breadcrumb: 'Claims' }, loadChildren: () => import('./claim/claim.module').then(m => m.ClaimModule) },
-        { path: 'claim', data: { breadcrumb: 'Claims' }, loadChildren: () => import('../../demo/components/coverage/coverage.module').then(m => m.CoverageModule) },
-        { path: 'coverage', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('../../demo/components/coverage/coverage.module').then(m => m.CoverageModule) },
+        { path: 'claim', data: { breadcrumb: 'Claims' }, loadChildren: () => import('./coverage/coverage.module').then(m => m.CoverageModule) },
+        { path: 'coverage', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./coverage/coverage.module').then(m => m.CoverageModule) },
         { path: 'product', data: { breadcrumb: 'Product' }, loadChildren: () => import('./product/product.module').then(m => m.ProductModule) },
         { path: '**', redirectTo: '/notfound' }
     ])],
