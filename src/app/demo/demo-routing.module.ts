@@ -16,9 +16,8 @@ const routes: Routes = [
             { path: 'blocks', data: { breadcrumb: 'Prime Blocks' }, loadChildren: () => import('./components/primeblocks/primeblocks.module').then(m => m.PrimeBlocksModule) },
             { path: 'ecommerce', data: { breadcrumb: 'E-Commerce' }, loadChildren: () => import('./components/ecommerce/ecommerce.module').then(m => m.EcommerceModule) },
             { path: 'apps', data: { breadcrumb: 'Apps' }, loadChildren: () => import('./components/apps/apps.module').then(m => m.AppsModule) },
-            { path: 'coverage', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('./components/coverage/coverage.module').then(m => m.CoverageModule) },
-            { path: 'investments', data: { breadcrumb: 'Investments' }, loadChildren: () => import('./components/investments/investments.module').then(m => m.InvestmentsModule) },
-
+            { path: 'coverage', data: { breadcrumb: 'Coverage' }, loadChildren: () => import('../components/pages/coverage/coverage.module').then(m => m.CoverageModule) },
+            { path: 'investments', data: { breadcrumb: 'Investments' }, loadChildren: () => import('../components/pages/investments/investments.module').then(m => m.InvestmentsModule) },
         ]
     },
     { path: 'auth', data: { breadcrumb: 'Auth' }, loadChildren: () => import('./components/auth/auth.module').then(m => m.AuthModule) },
