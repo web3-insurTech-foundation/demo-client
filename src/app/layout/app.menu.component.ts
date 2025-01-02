@@ -16,25 +16,25 @@ export class AppMenuComponent implements OnInit {
                 icon: 'pi pi-home',
                 items: [
                     {
-                        label: 'Analytics Dashboard',
-                        icon: 'pi pi-fw pi-chart-pie',
-                        routerLink: ['/dashboard/dashboard-analytics']
+                        label: 'System Dashboard',
+                        icon: 'pi pi-fw pi-home',
+                        routerLink: ['/home/dashboard/']
                     },
                     {
-                        label: 'Sales Dashboard',
-                        icon: 'pi pi-fw pi-home',
-                        routerLink: ['/dashboard/']
+                        label: 'Analytics Dashboard',
+                        icon: 'pi pi-fw pi-chart-pie',
+                        routerLink: ['/home/dashboard/dashboard-analytics']
                     },
                     {
                         label: 'DAO Dashboard',
                         icon: 'pi pi-fw pi-bolt',
-                        routerLink: ['//dashboard/dashboard-saas']
+                        routerLink: ['/home/dashboard/dashboard-saas']
                     },
-                    {
-                      label: 'Claims Dashboard',
-                      icon: 'pi pi-fw pi-comment',
-                      routerLink: ['/dashboard/dashboard-claims']
-                    }
+                    // {
+                    //   label: 'Claims Dashboard',
+                    //   icon: 'pi pi-fw pi-comment',
+                    //   routerLink: ['/home/dashboard/dashboard-claims']
+                    // }
                 ]
             },
             {
@@ -44,17 +44,17 @@ export class AppMenuComponent implements OnInit {
                   {
                       label: 'My Policies',
                       icon: 'pi pi-fw pi-eye',
-                      routerLink: ['/coverage/policies']
+                      routerLink: ['/home/coverage/policies']
                   },
                   {
                       label: 'My Claims',
                       icon: 'pi pi-fw pi-globe',
-                      routerLink: ['/coverage/claims']
+                      routerLink: ['/home/coverage/claims']
                   },
                   {
                       label: 'Marketplace',
                       icon: 'pi pi-fw pi-globe',
-                      routerLink: ['/coverage/marketplace']
+                      routerLink: ['/home/coverage/marketplace']
                   }
               ]
             },
@@ -65,15 +65,16 @@ export class AppMenuComponent implements OnInit {
                   {
                       label: 'Dashboard',
                       icon: 'pi pi-fw pi-eye',
-                      routerLink: ['/investments/dashboard']
+                      routerLink: ['/home/investments/dashboard']
                   },
                   {
                       label: 'Marketplace',
                       icon: 'pi pi-fw pi-globe',
-                      routerLink: ['/investments/dashboard']
+                      routerLink: ['/home/investments/marketplace']
                   }
               ]
             },
+            /*
             {
                 label: 'Apps',
                 icon: 'pi pi-th-large',
@@ -534,6 +535,7 @@ export class AppMenuComponent implements OnInit {
                     }
                 ]
             }
+            */
         ];
     }
 }

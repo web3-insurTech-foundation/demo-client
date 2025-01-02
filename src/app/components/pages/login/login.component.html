@@ -2,7 +2,7 @@
   <div class=" shadow-2 bg-indigo-500 z-5 p-3 flex justify-content-between flex-row align-items-center">
       <div class="ml-3 flex" routerLink="/">
           <div>
-              <img class="h-2rem" src="assets/layout/images/logo2x.png" alt="" />
+              <img class="h-2rem" src="assets/layout/images/logo-png-200px.png" alt="" />
           </div>
       </div>
       <div class="mr-3 flex">
@@ -31,7 +31,10 @@
                   <i class="pi pi-key"></i>
                   <input type="password" class="w-full" pInputText placeholder="Password" />
               </span>
-              <button pButton pRipple class="w-full my-3 px-3" label="LOGIN" [routerLink]="['/']"></button>
+              <button pButton pRipple class="w-full my-3 px-3" label="LOGIN" [routerLink]="['/home']"></button>
+              <div>
+                <button [routerLink]="['/signup']" pButton pRipple class="w-full p-button-text text-primary-500" label="SIGN UP"></button>
+            </div>
           </div>
       </div>
   </div>

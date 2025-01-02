@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-marketplace',
-  templateUrl: './marketplace.component.html',
-  styleUrl: './marketplace.component.scss'
+  selector: 'app-investment-marketplace',
+  templateUrl: './investment-marketplace.component.html',
+  styleUrl: './investment-marketplace.component.scss'
 })
-export class MarketplaceComponent {
+export class InvestmentMarketplaceComponent {
 
   color1: string = 'Bluegray';
 
@@ -69,4 +69,3 @@ export class MarketplaceComponent {
         },
     ];
 }
-

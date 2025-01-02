@@ -30,7 +30,7 @@ export class PoliciesComponent implements OnInit, OnDestroy {
           size: '$500 Deductible',
           price: '$500',
           deliveryDate: 'In Effect until 7 February 2025',
-          image: 'assets/demo/images/ecommerce/order-history/orderhistory-2.png'
+          image: 'assets/demo/images/ecommerce/order-history/car.jpg'
         },
         {
           name: 'Extended Home Warranty',
@@ -38,7 +38,7 @@ export class PoliciesComponent implements OnInit, OnDestroy {
           size: '$150 Deductible',
           price: '$630',
           deliveryDate: 'In Effect until 7 February 2025',
-          image: 'assets/demo/images/ecommerce/order-history/orderhistory-3.png'
+          image: 'assets/demo/images/ecommerce/order-history/house.jpg'
         },
       ]
     },
@@ -54,7 +54,7 @@ export class PoliciesComponent implements OnInit, OnDestroy {
           size: '$1,000 Deductible',
           price: '$800',
           deliveryDate: 'In Effect until 9 March 2025 ',
-          image: 'assets/demo/images/ecommerce/order-history/orderhistory-4.png'
+          image: 'assets/demo/images/ecommerce/order-history/orderhistory-3.png'
         }
       ]
     }

@@ -21,7 +21,7 @@ export class AllClaimsComponent {
                 size: 'Small',
                 price: '$50',
                 deliveryDate: 'Complete on 17 December 2024',
-                image: 'assets/demo/images/ecommerce/order-history/orderhistory-1.png'
+                image: 'assets/demo/images/ecommerce/order-history/plumbing.jpg'
             }
         ]
     },
@@ -38,7 +38,7 @@ export class AllClaimsComponent {
                 size: 'Large',
                 price: '$9,400',
                 deliveryDate: 'Complete on 7 April 2023',
-                image: 'assets/demo/images/ecommerce/order-history/orderhistory-4.png'
+                image: 'assets/demo/images/ecommerce/order-history/roof.jpg'
             },
             {
                 name: 'Window Damage and replacement',
@@ -46,7 +46,7 @@ export class AllClaimsComponent {
                 size: 'Small',
                 price: '$200',
                 deliveryDate: 'Complete on 7 March 2023',
-                image: 'assets/demo/images/ecommerce/order-history/orderhistory-5.png'
+                image: 'assets/demo/images/ecommerce/order-history/window.jpg'
             },
             {
                 name: 'Carpet replacement',
@@ -54,7 +54,7 @@ export class AllClaimsComponent {
                 size: 'Small',
                 price: '$150',
                 deliveryDate: 'Complete on 7 March 2023',
-                image: 'assets/demo/images/ecommerce/order-history/orderhistory-6.png'
+                image: 'assets/demo/images/ecommerce/order-history/carpet.jpg'
             },
         ]
     }

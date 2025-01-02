@@ -8,13 +8,12 @@ const routerOptions: ExtraOptions = {
 
 const routes: Routes = [
   {
-    path: '', component: AppLayoutComponent,
+    path: 'home', component: AppLayoutComponent,
     children: [
-      //{ path: '', loadChildren: () => import('./components/pages/login/login.module').then(m => m.LoginModule)},
+      //{ path: '', loadChildren: () => import('./demo/components/auth/login/login.module').then(m => m.LoginModule)},
       //{ path: 'login', loadChildren: () => import('./components/pages/login/login.module').then(m => m.LoginModule)},
       // { path: 'signup', loadChildren: () => import('./components/pages/signup/signup.module').then(m => m.SignupModule)},
-      //{ path: 'signup', loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule)},
-      //{ path: '', loadChildren: () => import('./components/pages/dashboard/dashboard.module').then(m => m.DashboardModule)},
+      // this one we will move eventually when we have a proper dashboard
       { path: '', loadChildren: () => import('./demo/components/dashboards/dashboards.module').then(m => m.DashboardsModule)},
       { path: 'dashboard', loadChildren: () => import('./demo/components/dashboards/dashboards.module').then(m => m.DashboardsModule)},
       { path: 'invest', loadChildren: () => import('./components/pages/invest/invest.module').then(m => m.InvestModule)},
@@ -26,7 +25,7 @@ const routes: Routes = [
   },
 
   // { path: '', loadChildren: () => import('./components/pages/login/login.module').then(m => m.LoginModule)},
-  { path: 'login', loadChildren: () => import('./components/pages/login/login.module').then(m => m.LoginModule)},
+  { path: '', loadChildren: () => import('./components/pages/login/login.module').then(m => m.LoginModule)},
   { path: 'signup', loadChildren: () => import('./components/pages/signup/signup.module').then(m => m.SignupModule)},
   // { path: 'dashboard', loadChildren: () => import('./components/pages/dashboard/dashboard.module').then(m => m.DashboardModule)},
   // { path: 'invest', loadChildren: () => import('./components/pages/invest/invest.module').then(m => m.InvestModule)},
