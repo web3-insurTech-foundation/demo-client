@@ -5,8 +5,9 @@
           <span class="text-700 text-lg">Summary of claims attached to this account.</span>
       </div>
       <span class="p-input-icon-right mt-5 mb-2 md:mt-0 md:mb-0 w-full lg:w-25rem">
-          <i class="pi pi-search text-gray-400"></i>
-          <input type="text" class="p-inputtext w-full lg:w-25rem surface-50" placeholder="Search"/>
+          <button [routerLink]="['/home']" pButton pRipple class="w-full" label="Submit New Claim"></button>
+          <!-- <i class="pi pi-search text-gray-400"></i>
+          <input type="text" class="p-inputtext w-full lg:w-25rem surface-50" placeholder="Search"/> -->
       </span>
   </div>
   <div class="surface-card grid grid-nogutter border-round shadow-2 mb-6" *ngFor="let order of orders">
@@ -56,7 +57,7 @@
           </div>
       </div>
       <div class="col-12 p-0 flex border-top-1 surface-border">
-          <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-left-radius: 6px;"><i class="pi pi-folder mr-2 mb-2 md:mb-1"></i>Archive Order</a>
+          <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-left-radius: 6px;"><i class="pi pi-folder mr-2 mb-2 md:mb-1"></i>Archive Claim</a>
           <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-refresh mr-2 mb-2 md:mb-1"></i>Return</a>
           <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full"><i class="pi pi-file mr-2 mb-2 md:mb-1"></i>View Invoice</a>
           <a tabindex="0" class="cursor-pointer py-4 flex flex-column md:flex-row text-center justify-content-center align-items-center text-primary hover:bg-primary hover:text-0 transition-duration-150 w-full" style="border-bottom-right-radius: 6px;"><i class="pi pi-comment mr-2 mb-2 md:mb-1"></i>Write a Review</a>

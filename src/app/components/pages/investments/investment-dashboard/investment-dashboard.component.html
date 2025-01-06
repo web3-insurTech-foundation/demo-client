@@ -1,10 +1,17 @@
 <div class="grid p-fluid">
+  <div class="col-12">
+    <div class="card">
+      <h4>Account Balances</h4>
+      <h6>Total Cash Available: $6,000.00</h6>
+      <h6>Total Token Valuation: $36,500.00</h6>
+      <h6>Profit/Loss: <span style="color: green;">$6,432.00</span></h6>
+    </div>
+  </div>
   <div class="col-12 lg:col-6">
       <div class="card">
           <h5>Monthly Token Valuation ($000s)</h5>
           <p-chart type="line" [data]="lineData" [options]="lineOptions"></p-chart>
       </div>
-
       <div class="card flex flex-column align-items-center">
           <h5 class="text-left w-full">Risk Pool Allocations</h5>
           <p-chart type="pie" [data]="pieData" [options]="pieOptions"></p-chart>

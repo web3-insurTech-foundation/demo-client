@@ -13,32 +13,38 @@ export class MarketplaceComponent {
         {
             name: 'Windstorm 4000',
             price: '$1,400.00',
-            image: 'assets/demo/images/ecommerce/product-list/windstorm-4000.jpg'
+            image: 'assets/demo/images/ecommerce/product-list/windstorm-4000.jpg',
+            category: 'Windstorm'
         },
         {
             name: 'Roof Only - Named Storm Coverage',
             price: '$82.00',
-            image: 'assets/demo/images/ecommerce/product-list/roof-plan.jpg'
+            image: 'assets/demo/images/ecommerce/product-list/roof-plan.jpg',
+            category: 'Windstorm'
         },
         {
             name: 'Home Coverage - Liability Only',
             price: '$54.00',
-            image: 'assets/demo/images/ecommerce/product-list/complete-home-liability.jpg'
+            image: 'assets/demo/images/ecommerce/product-list/complete-home-liability.jpg',
+            category: 'General'
         },
         {
             name: 'Auto Complete Coverage',
             price: '$720.00',
-            image: 'assets/demo/images/ecommerce/product-list/complete-car.jpg'
+            image: 'assets/demo/images/ecommerce/product-list/complete-car.jpg',
+            category: 'Vehicle'
         },
         {
             name: 'Pet and Animal Coverage',
             price: '$99.00',
-            image: 'assets/demo/images/ecommerce/product-list/pet-care.jpg'
+            image: 'assets/demo/images/ecommerce/product-list/pet-care.jpg',
+            category: 'Animal'
         },
         {
             name: 'Personal Belongings Coverage',
             price: '$59.00',
-            image: 'assets/demo/images/ecommerce/product-list/personal-items.jpg'
+            image: 'assets/demo/images/ecommerce/product-list/personal-items.jpg',
+            category: 'Personal'
         }
     ];
 

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { InvestmentMarketplaceRoutingModule } from './investment-marketplace-routing.module';
 import { InvestmentMarketplaceComponent } from './investment-marketplace.component';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { InvestmentMarketplaceComponent } from './investment-marketplace.compone
   ],
   imports: [
     CommonModule,
-    InvestmentMarketplaceRoutingModule
+    InvestmentMarketplaceRoutingModule,
+    ProgressBarModule
   ]
 })
 export class InvestmentMarketplaceModule { }
