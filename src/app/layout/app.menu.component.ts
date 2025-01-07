@@ -11,32 +11,7 @@ export class AppMenuComponent implements OnInit {
 
     ngOnInit() {
         this.model = [
-            {
-                label: 'System Dashboards',
-                icon: 'pi pi-home',
-                items: [
-                    {
-                        label: 'System Dashboard',
-                        icon: 'pi pi-fw pi-home',
-                        routerLink: ['/home/dashboard/']
-                    },
-                    {
-                        label: 'Analytics Dashboard',
-                        icon: 'pi pi-fw pi-chart-pie',
-                        routerLink: ['/home/dashboard/dashboard-analytics']
-                    },
-                    {
-                        label: 'DAO Dashboard',
-                        icon: 'pi pi-fw pi-bolt',
-                        routerLink: ['/home/dashboard/dashboard-saas']
-                    },
-                    // {
-                    //   label: 'Claims Dashboard',
-                    //   icon: 'pi pi-fw pi-comment',
-                    //   routerLink: ['/home/dashboard/dashboard-claims']
-                    // }
-                ]
-            },
+
             {
               label: 'Coverage',
               icon: 'pi pi-fw pi-prime',
@@ -74,7 +49,33 @@ export class AppMenuComponent implements OnInit {
                   }
               ]
             },
-            /*
+            {
+                label: 'System Dashboards',
+                icon: 'pi pi-home',
+                items: [
+                    {
+                        label: 'System Dashboard',
+                        icon: 'pi pi-fw pi-home',
+                        routerLink: ['/home/dashboard/']
+                    },
+                    {
+                        label: 'Analytics Dashboard',
+                        icon: 'pi pi-fw pi-chart-pie',
+                        routerLink: ['/home/dashboard/dashboard-analytics']
+                    },
+                    {
+                        label: 'DAO Dashboard',
+                        icon: 'pi pi-fw pi-bolt',
+                        routerLink: ['/home/dashboard/dashboard-saas']
+                    },
+                    // {
+                    //   label: 'Claims Dashboard',
+                    //   icon: 'pi pi-fw pi-comment',
+                    //   routerLink: ['/home/dashboard/dashboard-claims']
+                    // }
+                ]
+            },
+/*
             {
                 label: 'Apps',
                 icon: 'pi pi-th-large',
@@ -535,7 +536,7 @@ export class AppMenuComponent implements OnInit {
                     }
                 ]
             }
-            */
+*/
         ];
     }
 }

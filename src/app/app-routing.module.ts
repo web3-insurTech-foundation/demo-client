@@ -14,7 +14,7 @@ const routes: Routes = [
       //{ path: 'login', loadChildren: () => import('./components/pages/login/login.module').then(m => m.LoginModule)},
       // { path: 'signup', loadChildren: () => import('./components/pages/signup/signup.module').then(m => m.SignupModule)},
       // this one we will move eventually when we have a proper dashboard
-      { path: '', loadChildren: () => import('./demo/components/dashboards/dashboards.module').then(m => m.DashboardsModule)},
+      { path: '', loadChildren: () => import('./components/pages/getting-started/getting-started.module').then(m => m.GettingStartedModule)},
       { path: 'dashboard', loadChildren: () => import('./demo/components/dashboards/dashboards.module').then(m => m.DashboardsModule)},
       { path: 'invest', loadChildren: () => import('./components/pages/invest/invest.module').then(m => m.InvestModule)},
       { path: 'investments', loadChildren: () => import('./components/pages/investments/investments.module').then(m => m.InvestmentsModule)},
